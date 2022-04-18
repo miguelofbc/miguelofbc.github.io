@@ -1,2 +1,2 @@
 # Miguel Oliveira's Public HTML CV
-https://miguelofbc.github.io/#
+https://miguelofbc.github.io
