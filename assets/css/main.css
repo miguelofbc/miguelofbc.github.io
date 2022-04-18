@@ -194,8 +194,12 @@ input, select, textarea {
 			width: -webkit-max-content;
 			width: -ms-max-content;
 			width: max-content;
-			padding-bottom: 0.5rem;
+			padding-bottom: 2rem;
 			margin: 0 0 2rem 0;
+		}
+
+		h3.minor {
+			padding-top: 2rem;
 		}
 
 	h1 {
@@ -734,7 +738,7 @@ input, select, textarea {
 
 	ul {
 		list-style: disc;
-		margin: 0 0 2rem 0;
+		margin: 0 0 0 0;
 		padding-left: 1em;
 	}
 
