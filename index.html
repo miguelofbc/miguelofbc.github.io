@@ -1,521 +1,147 @@
-<!DOCTYPE HTML>
-<!--
-	Dimension by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
-<html>
-	<head>
-		<title>Miguel Oliveira</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-	</head>
-	<body class="is-preload">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Miguel Oliveira — Engineering Manager · AI-SDLC</title>
+  <meta name="description" content="Engineering Manager building AI-SDLC and agentic test automation in production SaaS. Aveiro, Portugal.">
+  <meta property="og:title" content="Miguel Oliveira — Engineering Manager · AI-SDLC">
+  <meta property="og:description" content="Engineering Manager building AI-SDLC and agentic test automation in production SaaS.">
+  <meta property="og:type" content="profile">
+  <style>
+    :root {
+      --fg: #1a1a1a;
+      --fg-muted: #555;
+      --fg-faint: #888;
+      --bg: #fafafa;
+      --accent: #0a66c2;
+      --border: #e5e5e5;
+    }
+    * { box-sizing: border-box; }
+    html { -webkit-text-size-adjust: 100%; }
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+      font-size: 17px;
+      line-height: 1.6;
+      color: var(--fg);
+      background: var(--bg);
+      -webkit-font-smoothing: antialiased;
+    }
+    main {
+      max-width: 640px;
+      margin: 0 auto;
+      padding: 5rem 1.5rem 4rem;
+    }
+    h1 {
+      font-size: 1.85rem;
+      margin: 0 0 0.25rem;
+      letter-spacing: -0.02em;
+      font-weight: 600;
+    }
+    .role {
+      color: var(--fg-muted);
+      margin: 0 0 2.25rem;
+      font-size: 1.05rem;
+    }
+    h2 {
+      font-size: 0.78rem;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      color: var(--fg-faint);
+      margin: 2.5rem 0 0.85rem;
+      font-weight: 600;
+    }
+    p { margin: 0 0 1rem; }
+    ul {
+      padding-left: 1.2rem;
+      margin: 0 0 1rem;
+    }
+    li { margin-bottom: 0.4rem; }
+    strong { font-weight: 600; }
+    a {
+      color: var(--accent);
+      text-decoration: none;
+      border-bottom: 1px solid transparent;
+      transition: border-color 0.15s;
+    }
+    a:hover { border-bottom-color: var(--accent); }
+    .contact {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1.5rem;
+      margin-top: 0.5rem;
+    }
+    footer {
+      margin-top: 4rem;
+      padding-top: 1.25rem;
+      border-top: 1px solid var(--border);
+      color: var(--fg-faint);
+      font-size: 0.85rem;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --fg: #ededed;
+        --fg-muted: #b0b0b0;
+        --fg-faint: #888;
+        --bg: #111;
+        --accent: #6cb6ff;
+        --border: #2a2a2a;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>Miguel Oliveira</h1>
+    <p class="role">Engineering Manager · AI-SDLC &amp; agentic test automation</p>
 
-		<!-- Wrapper -->
-			<div id="wrapper">
+    <p>
+      I lead a 5-person platform and quality engineering team at a B2B SaaS company,
+      building AI-SDLC tooling on a Playwright and TypeScript codebase. Most of my
+      work sits at the intersection of agentic systems and developer productivity —
+      turning flaky test failures into PR-ready fixes, embedding LLMs into the CI
+      pipeline, and pushing platform-level quality patterns across an engineering
+      organisation that spans Lisbon and PST.
+    </p>
 
-				<!-- Header -->
-					<header id="header">
-						<div class="logo">
-							<span class="icon fa-gem"></span>
-						</div>
-						<div class="content">
-							<div class="inner">
-								<h1>Miguel Oliveira</h1>
-								<p><b>Senior Automation Engineer</b></p>
-								<p>Passionate 9 years experienced hardware verification and software quality engineer</p>
-								<p><img src="images/profile1.png" alt="" /></p>
-							</div>
-						</div>
-						<nav>
-							<ul>
-								<li><a href="#intro">Intro</a></li>
-								<li><a href="#hobbies">Hobbies</a></li>
-								<li><a href="#education">Education</a></li>
-								<li><a href="#work">Work</a></li>
-								<li><a href="#skills">Skills</a></li>
-								<li><a href="#contact">Contact</a></li>
-								<!--<li><a href="#elements">Elements</a></li>-->
-							</ul>
-						</nav>
-					</header>
+    <p>
+      Based in Aveiro, Portugal.
+    </p>
 
-				<!-- Main -->
-					<div id="main">
+    <h2>Currently working on</h2>
+    <ul>
+      <li>An in-house agentic autofix loop that triages flaky Playwright failures and opens PRs</li>
+      <li>Platform patterns for embedding AI into the SDLC at team scale</li>
+      <li>GitHub Actions CI architecture for cross-timezone engineering teams</li>
+    </ul>
 
-						<!-- Intro -->
-							<article id="intro">
-								<h2 class="major">Intro</h2>
-								<span class="image main"><img src="images/profile2.jpg" alt="" /></span>
-								<p class="icon solid fa-hand-sparkles">
-									 Hello, nice to meet you!
-								</p>
-								<p>
-									My name is <b>Miguel Oliveira</b>.<br>
-									I am from <b>Calvão</b>, a small town in <b>Aveiro</b>, <b>Portugal</b>.<br>
-									I am a <b>father</b>, a <b>husband</b> and a <b>dreamer</b>!<br>
-									Do you want to know me better, please check out <a href="#hobbies">hobbies</a>.
-								</p> 
-								<p>
-									I've completed the <b>Masters in Electrical and Computer Engineering</b> at July 2013, at Faculty of Engineering of the University of Porto, also known as <b><a href="https://sigarra.up.pt/feup/en/WEB_PAGE.INICIAL" target="_blank">FEUP</a></b>.<br>
-									For more on that, please check out <a href="#education">Education</a>.
-								</p> 
-								<p>
-									At the same time I was finishing the masters course, I've started as <b>ASIC Digital Verification Engineer</b>, at <b><a href="https://www.synopsys.com" target="_blank">Synopsys</a></b>, doing DDR PHY and DPHY ASICs digital verification.<br>
-									I've moved to <b>Software Test Engineering</b> 5 years later and joined <b><a href="https://www.fuze.com" target="_blank">Fuze</a></b>, working on the UCAAS Software Validation.<br>
-									I am currently working as a <b>Senior Automation Engineer</b>, at <b><a href="https://www.synopsys.com" target="_blank">Urbint</a></b>, working on stop incidents before they happen.<br>
-									I have close to 9 years innovative digital experiences.<br>
-									For more details about my work expirience, please refer to <a href="#work">work</a>.
-								</p>
-							</article>
+    <h2>Background</h2>
+    <p>
+      Thirteen years across hardware verification and software quality engineering.
+      Started at <strong>Synopsys Porto</strong> (2013–2019) doing ASIC digital verification on
+      DDR PHY and MIPI DPHY IPs. Moved into software quality at <strong>Fuze</strong> (2019–2022)
+      leading a QA team on UCaaS desktop and web. Currently EM, focused on AI-SDLC
+      and agentic test automation. Master's in Electrical and Computer Engineering
+      from <a href="https://sigarra.up.pt/feup/en/WEB_PAGE.INICIAL">FEUP</a> (2013).
+    </p>
 
-						<!-- Hobbies -->
-							<article id="hobbies">
-								<h2 class="major">Hobbies</h2>
-								<p><i>"Friends will be Friends"</i></p>
-								<span class="image main hangout2"><img src="images/hangout1.jpg" alt="" /></span>
-								<span class="image main hangout"><img src="images/hangout2.jpg" alt="" /></span>
-								<h3 class="minor soccer">Soccer</h3>
-								<p><i>"Soccer"</i></p>
-								<span class="image main soccer"><img src="images/soccer.jpg" alt="" /></span>
-								<h3 class="minor travel">Travel</h3>
-								<p><i>"Travel"</i></p>
-								<span class="image main travel"><img src="images/travel.jpg" alt="" /></span>
-								<h3 class="minor other sports">Other Sports</h3>
-								<p><i>"Other Sports"</i></p>
-								<span class="image main sports"><img src="images/byking.jpg" alt="" /></span>
-							</article>
+    <h2>Open to</h2>
+    <ul>
+      <li>Technical conversations on AI-SDLC, agentic testing, and platform quality engineering</li>
+      <li>OSS collaboration in the space</li>
+    </ul>
 
-						<!-- Education -->
-							<article id="education">
-								<h2 class="major">Education</h2>
-								<span class="image main"><img src="images/feup1.jpg" alt="" /></span>
-								<p>
-									Faculty of Engineering of the University of Porto | FEUP<br>
-									MS: July 2013<br><br>
+    <h2>Contact</h2>
+    <div class="contact">
+      <a href="https://www.linkedin.com/in/miguel-oliveira-27a70049/">LinkedIn</a>
+      <a href="https://github.com/miguelofbc">GitHub</a>
+      <a href="mailto:miguelofbc@gmail.com">Email</a>
+    </div>
 
-									Masters in Electrical and Computer Engineering<br>
-									- Telecommunications<br>
-									- Electronics<br>
-									- Computers
-								</p>
-							</article>
-
-						<!-- Work -->
-							<article id="work">
-								<h2 class="major">Work</h2>
-								<h3 class="minor">SYNOPSYS Porto &nbsp;&nbsp;&nbsp;2013-2019</h3>
-								<h4>ASIC Digital Verification Engineer</h4>
-									<ul>
-										<li>DDR PHY and MIPI DPHY IPs</li>
-										<li>Digital Verification | Verilog, SystemVerilog, VMM, UVM</li>
-										<li>Verilog Modeling</li>
-										<li>Post-Layout Simulation</li>
-										<li>Project owner</li>
-										<li>Mentoring and onboard new colleagues</li>
-									</ul>
-								<h3 class="minor">FUZE Aveiro | Remote &nbsp;&nbsp;&nbsp;2019-2022</h3>
-								<h4>Team Lead QA Engineer | Fuze Ion WG Prime</h4>
-									<ul>
-										<li>Build and manage a team of 5 quality engineers, to ensure the delivery of high-quality UCaaS applications for the desktop and web platforms</li>
-										<li>Led a working group project to replace a desktop client with an Electron-based application | Electron</li>
-										<li>Manage rollout process for desktop and web platforms</li>
-										<li>Enable automation and continuous integration for new desktop application</li>
-										<li>Automate native and web-based E2E tests using Selenium framework with Java | AppiumForMac  | WinAppDriver | Maven, JUnit, Extent Report</li>
-										<li>Implement Jenkins pipeline used to run automated tests | Groovy</li>
-										<li>Implement and manage the rollout process for the new desktop application</li>
-										<li>Meetings backend deploy management, pre/post-deploy validation</li>
-									</ul>
-								<h3 class="minor">Urbint Remote &nbsp;&nbsp;&nbsp;2022-Present</h3>
-								<h4>Senior Automation Engineer</h4>
-									<ul>
-										<li>Build a web-based automation framework from scratch using Playwright with Typescript | Allure, Codefresh, Google Cloud, Slack API</li>
-										<li>Drive new testing environment implementation and efficient usage of the same</li>
-										<li>Improve the continuous integration process for the Urbint SaaS application using GitHub Actions and Codefresh</li>
-										<li>Automate web-based E2E tests using Cypress framework with Typescript</li>
-										<li>Implement a whole-team approach to quality, where every member of the engineering team values quality, writes/runs tests, and work on improving the process</li>
-										<li>Setup and enable K6 to perform load testing under a specific project</li>
-									</ul>
-							</article>
-
-						<!-- Skills -->
-							<article id="skills">
-								<h2 class="major">Skills</h2>
-								<h3 class="minor">Communication</h3>
-									<ul class="skillbox">
-										<li>
-											<p>Portuguese</p>
-											<p>100%</p>
-											<div class="skill">
-												<div class="level" style="width: 100%; background: #2fc44a;"></div>
-											</div>
-										</li>
-										<li>
-											<p>English</p>
-											<p>80%</p>
-											<div class="skill">
-												<div class="level" style="width: 80%; background: #2fc47f;"></div>
-											</div>
-										</li>
-										<li>
-											<p>Spanish</p>
-											<p>20%</p>
-											<div class="skill">
-												<div class="level" style="width: 20%; background: #c4542fdb;"></div>
-											</div>
-										<li>
-											<p>French</p>
-											<p>10%</p>
-											<div class="skill">
-												<div class="level" style="width: 10%; background: #bd3217;"></div>
-											</div>
-										</li>
-									</ul>
-								<h3 class="minor">Software Testing</h3>
-								<ul>
-									<li>Playwright</li>
-									<li>Cypress</li>
-									<li>Selenium</li>
-									<li>K6</li>
-									<li>Java</li>
-									<li>Javascript</li>
-									<li>Typescript</li>
-									<li>AppiumForMac</li>
-									<li>WinAppDriver</li>
-									<li>Maven</li>
-									<li>Mocha</li>
-									<li>Testing Library</li>
-									<li>jUnit</li>
-									<li>Extent Report</li>
-									<li>Allure</li>
-									<li>Jira</li>
-									<li>Zephyr</li>
-									<li>Exploratory testing</li>
-									<li>Bug bashes</li>
-								</ul>
-								<h3 class="minor">Devops</h3>
-								<ul>
-									<li>Continuous integration</li>
-									<li>Jenkinsfile</li>
-									<li>Groovy</li>
-									<li>Codefresh</li>
-									<li>GitHub Actions</li>
-									<li>Jenkinsfile</li>
-									<li>ArgoCD</li>
-									<li>Google Cloud</li>
-									<li>Datadog</li>
-									<li>Splunk</li>
-									<li>Google Cloud</li>
-								</ul>
-								<h3 class="minor">People Management</h3>
-								<ul>
-									<li>Team values</li>
-										<ul>
-											<li>Resilience</li>
-											<li>Leading by example</li>
-										</ul>
-									<li>Adapt to change</li>
-									<li>Intrinsic motivation</li>
-									<li>8 ICs onboarding</li>
-									<li>5 ICs direct reports</li>
-									<li>7 ICs WG resources + leaders + sponsors + internal communications</li>
-									<li>OKR + SMART + GROW</li>
-									<li>Management 3.0</li>
-								</ul>
-								<h3 class="minor">Project Planning</h3>
-								<ul>
-									<li>Scrum</li>
-									<ul>
-										<li>Sprint planning</li>
-										<li>Demo</li>
-										<li>Retrospective</li>
-									</ul>
-									<li>Agile</li>
-									<li>Get things done</li>
-								</ul>
-							</article>
-
-						<!-- Contact -->
-							<article id="contact">
-								<h2 class="major">Contact</h2>
-								<ul class="alt">
-									<li class="icon solid fa-home"> Rua do Brasil, Lote 1, Entrada 1, Ap 4.8, 3800-009 Aveiro</li>
-									<li class="icon solid fa-phone"> +351 918914254</li>
-									<li class="icon solid fa-inbox"> miguelofbc@gmail.com</li>
-								</ul>
-								<ul class="icons">
-									<li><a href="https://github.com/miguelofbc" target="_blank" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
-									<li><a href="https://www.linkedin.com/in/miguel-oliveira-27a70049/" target="_blank" class="icon brands fa-linkedin"><span class="label">Linkedin</span></a></li>
-									<li><a href="https://twitter.com/miguelofbc" target="_blank" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
-									<li><a href="https://www.facebook.com/moliveir" target="_blank" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
-									<li><a href="https://www.instagram.com/miguel_oliveira_/" target="_blank" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
-								</ul>
-							</article>
-
-						<!-- Elements -->
-							<article id="elements">
-								<h2 class="major">Elements</h2>
-
-								<section>
-									<h3 class="major">Text</h3>
-									<p>This is <b>bold</b> and this is <strong>strong</strong>. This is <i>italic</i> and this is <em>emphasized</em>.
-									This is <sup>superscript</sup> text and this is <sub>subscript</sub> text.
-									This is <u>underlined</u> and this is code: <code>for (;;) { ... }</code>. Finally, <a href="#">this is a link</a>.</p>
-									<hr />
-									<h2>Heading Level 2</h2>
-									<h3>Heading Level 3</h3>
-									<h4>Heading Level 4</h4>
-									<h5>Heading Level 5</h5>
-									<h6>Heading Level 6</h6>
-									<hr />
-									<h4>Blockquote</h4>
-									<blockquote>Fringilla nisl. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan faucibus. Vestibulum ante ipsum primis in faucibus lorem ipsum dolor sit amet nullam adipiscing eu felis.</blockquote>
-									<h4>Preformatted</h4>
-									<pre><code>i = 0;
-
-while (!deck.isInOrder()) {
-    print 'Iteration ' + i;
-    deck.shuffle();
-    i++;
-}
-
-print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
-								</section>
-
-								<section>
-									<h3 class="major">Lists</h3>
-
-									<h4>Unordered</h4>
-									<ul>
-										<li>Dolor pulvinar etiam.</li>
-										<li>Sagittis adipiscing.</li>
-										<li>Felis enim feugiat.</li>
-									</ul>
-
-									<h4>Alternate</h4>
-									<ul class="alt">
-										<li>Dolor pulvinar etiam.</li>
-										<li>Sagittis adipiscing.</li>
-										<li>Felis enim feugiat.</li>
-									</ul>
-
-									<h4>Ordered</h4>
-									<ol>
-										<li>Dolor pulvinar etiam.</li>
-										<li>Etiam vel felis viverra.</li>
-										<li>Felis enim feugiat.</li>
-										<li>Dolor pulvinar etiam.</li>
-										<li>Etiam vel felis lorem.</li>
-										<li>Felis enim et feugiat.</li>
-									</ol>
-									<h4>Icons</h4>
-									<ul class="icons">
-										<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
-										<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
-										<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
-										<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
-										<li><a href="#" class="icon brands fa-github"><span class="label">Github</span></a></li>
-									</ul>
-
-									<h4>Actions</h4>
-									<ul class="actions">
-										<li><a href="#" class="button primary">Default</a></li>
-										<li><a href="#" class="button">Default</a></li>
-									</ul>
-									<ul class="actions stacked">
-										<li><a href="#" class="button primary">Default</a></li>
-										<li><a href="#" class="button">Default</a></li>
-									</ul>
-								</section>
-
-								<section>
-									<h3 class="major">Table</h3>
-									<h4>Default</h4>
-									<div class="table-wrapper">
-										<table>
-											<thead>
-												<tr>
-													<th>Name</th>
-													<th>Description</th>
-													<th>Price</th>
-												</tr>
-											</thead>
-											<tbody>
-												<tr>
-													<td>Item One</td>
-													<td>Ante turpis integer aliquet porttitor.</td>
-													<td>29.99</td>
-												</tr>
-												<tr>
-													<td>Item Two</td>
-													<td>Vis ac commodo adipiscing arcu aliquet.</td>
-													<td>19.99</td>
-												</tr>
-												<tr>
-													<td>Item Three</td>
-													<td> Morbi faucibus arcu accumsan lorem.</td>
-													<td>29.99</td>
-												</tr>
-												<tr>
-													<td>Item Four</td>
-													<td>Vitae integer tempus condimentum.</td>
-													<td>19.99</td>
-												</tr>
-												<tr>
-													<td>Item Five</td>
-													<td>Ante turpis integer aliquet porttitor.</td>
-													<td>29.99</td>
-												</tr>
-											</tbody>
-											<tfoot>
-												<tr>
-													<td colspan="2"></td>
-													<td>100.00</td>
-												</tr>
-											</tfoot>
-										</table>
-									</div>
-
-									<h4>Alternate</h4>
-									<div class="table-wrapper">
-										<table class="alt">
-											<thead>
-												<tr>
-													<th>Name</th>
-													<th>Description</th>
-													<th>Price</th>
-												</tr>
-											</thead>
-											<tbody>
-												<tr>
-													<td>Item One</td>
-													<td>Ante turpis integer aliquet porttitor.</td>
-													<td>29.99</td>
-												</tr>
-												<tr>
-													<td>Item Two</td>
-													<td>Vis ac commodo adipiscing arcu aliquet.</td>
-													<td>19.99</td>
-												</tr>
-												<tr>
-													<td>Item Three</td>
-													<td> Morbi faucibus arcu accumsan lorem.</td>
-													<td>29.99</td>
-												</tr>
-												<tr>
-													<td>Item Four</td>
-													<td>Vitae integer tempus condimentum.</td>
-													<td>19.99</td>
-												</tr>
-												<tr>
-													<td>Item Five</td>
-													<td>Ante turpis integer aliquet porttitor.</td>
-													<td>29.99</td>
-												</tr>
-											</tbody>
-											<tfoot>
-												<tr>
-													<td colspan="2"></td>
-													<td>100.00</td>
-												</tr>
-											</tfoot>
-										</table>
-									</div>
-								</section>
-
-								<section>
-									<h3 class="major">Buttons</h3>
-									<ul class="actions">
-										<li><a href="#" class="button primary">Primary</a></li>
-										<li><a href="#" class="button">Default</a></li>
-									</ul>
-									<ul class="actions">
-										<li><a href="#" class="button">Default</a></li>
-										<li><a href="#" class="button small">Small</a></li>
-									</ul>
-									<ul class="actions">
-										<li><a href="#" class="button primary icon solid fa-download">Icon</a></li>
-										<li><a href="#" class="button icon solid fa-download">Icon</a></li>
-									</ul>
-									<ul class="actions">
-										<li><span class="button primary disabled">Disabled</span></li>
-										<li><span class="button disabled">Disabled</span></li>
-									</ul>
-								</section>
-
-								<section>
-									<h3 class="major">Form</h3>
-									<form method="post" action="#">
-										<div class="fields">
-											<div class="field half">
-												<label for="demo-name">Name</label>
-												<input type="text" name="demo-name" id="demo-name" value="" placeholder="Jane Doe" />
-											</div>
-											<div class="field half">
-												<label for="demo-email">Email</label>
-												<input type="email" name="demo-email" id="demo-email" value="" placeholder="jane@untitled.tld" />
-											</div>
-											<div class="field">
-												<label for="demo-category">Category</label>
-												<select name="demo-category" id="demo-category">
-													<option value="">-</option>
-													<option value="1">Manufacturing</option>
-													<option value="1">Shipping</option>
-													<option value="1">Administration</option>
-													<option value="1">Human Resources</option>
-												</select>
-											</div>
-											<div class="field half">
-												<input type="radio" id="demo-priority-low" name="demo-priority" checked>
-												<label for="demo-priority-low">Low</label>
-											</div>
-											<div class="field half">
-												<input type="radio" id="demo-priority-high" name="demo-priority">
-												<label for="demo-priority-high">High</label>
-											</div>
-											<div class="field half">
-												<input type="checkbox" id="demo-copy" name="demo-copy">
-												<label for="demo-copy">Email me a copy</label>
-											</div>
-											<div class="field half">
-												<input type="checkbox" id="demo-human" name="demo-human" checked>
-												<label for="demo-human">Not a robot</label>
-											</div>
-											<div class="field">
-												<label for="demo-message">Message</label>
-												<textarea name="demo-message" id="demo-message" placeholder="Enter your message" rows="6"></textarea>
-											</div>
-										</div>
-										<ul class="actions">
-											<li><input type="submit" value="Send Message" class="primary" /></li>
-											<li><input type="reset" value="Reset" /></li>
-										</ul>
-									</form>
-								</section>
-
-							</article>
-
-					</div>
-
-				<!-- Footer -->
-					<footer id="footer">
-						<p class="copyright">&copy; Untitled. Design: <a href="https://html5up.net">HTML5 UP</a>.</p>
-					</footer>
-
-			</div>
-
-		<!-- BG -->
-			<div id="bg"></div>
-
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
-
-	</body>
+    <footer>
+      Updated April 2026.
+    </footer>
+  </main>
+</body>
 </html>
