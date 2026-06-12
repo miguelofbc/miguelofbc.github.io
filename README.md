@@ -15,6 +15,14 @@ A single, self-contained `index.html`:
 - `schema.org/Person` JSON-LD and an inline SVG favicon are embedded directly.
 - Total page weight is a few KB; the page makes no third-party requests.
 
+Supporting files:
+
+- `assets/og.png` — the 1200×630 Open Graph / Twitter card image. Only link
+  scrapers (LinkedIn, Slack, X, …) fetch it; it never loads on a page view.
+  Regenerate with `python3 scripts/generate-og-image.py` (needs Pillow).
+- `robots.txt` and `sitemap.xml` — standard crawler hygiene.
+- `404.html` — GitHub Pages serves this for unknown paths.
+
 ## Hosting & deployment
 
 Served by **GitHub Pages** directly from this repository (a user site, so it

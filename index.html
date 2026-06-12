@@ -23,11 +23,16 @@
   <meta property="og:locale" content="en_US">
   <meta property="profile:first_name" content="Miguel">
   <meta property="profile:last_name" content="Oliveira">
+  <meta property="og:image" content="https://miguelofbc.github.io/assets/og.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Miguel Oliveira — Engineering Manager · AI-SDLC & agentic test automation — miguelofbc.github.io">
 
-  <!-- Twitter Card (summary works without an image) -->
-  <meta name="twitter:card" content="summary">
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Miguel Oliveira — Engineering Manager · AI-SDLC">
   <meta name="twitter:description" content="Verification and quality at every layer of the stack — from RTL to LLM agents. Aveiro, Portugal.">
+  <meta name="twitter:image" content="https://miguelofbc.github.io/assets/og.png">
 
   <!-- Inline SVG favicon (no extra request, no 404) -->
   <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%230a66c2'/%3E%3Ctext x='50%25' y='50%25' dy='.06em' text-anchor='middle' dominant-baseline='middle' font-family='-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif' font-size='30' font-weight='600' fill='%23ffffff'%3EMO%3C/text%3E%3C/svg%3E">
@@ -131,6 +136,7 @@
       color: var(--fg-faint);
       font-weight: 500;
       margin: var(--space-7) 0 var(--space-3);
+      scroll-margin-top: var(--space-5);
       display: flex;
       align-items: baseline;
       gap: 0.6em;
@@ -286,6 +292,7 @@
       }
       .timeline li, h2, footer { break-inside: avoid; }
       footer { margin-top: 1.25rem; border-top: 1px solid #999; }
+      .print-hint { display: none; }
       @page { margin: 1.6cm; }
     }
   </style>
@@ -309,7 +316,7 @@
       every layer of the stack — from RTL to LLM agents. Based in Aveiro, Portugal.
     </p>
 
-    <h2>Currently shipping</h2>
+    <h2 id="now">Currently shipping</h2>
     <ul>
       <li>An in-house agentic test-autofix system (Anthropic SDK + MCP) — in production for scheduled-run failure recovery on the main monorepo</li>
       <li>An LLM-based AI Evaluator integrated into PR validation and daily scheduled runs across 4 repositories</li>
@@ -317,7 +324,7 @@
       <li>CI/CD evolution on GitHub Actions: Playwright sharding, Workspaces migration, lightweight runners, MS Playwright Service</li>
     </ul>
 
-    <h2>Career</h2>
+    <h2 id="career">Career</h2>
     <p>
       Thirteen years of verification and quality work, moving up the stack one layer
       at a time — from silicon to software to AI.
@@ -345,7 +352,7 @@
       </li>
     </ul>
 
-    <h2>Selected skills</h2>
+    <h2 id="skills">Selected skills</h2>
     <ul>
       <li><strong>Verification &amp; quality</strong> — SystemVerilog/UVM hardware verification; Playwright, Cypress, Selenium and K6 across web, desktop and load testing; quality strategy owned at the team and platform level.</li>
       <li><strong>AI-SDLC</strong> — Anthropic SDK and MCP; LLM evaluators and agentic autofix in CI; the "AI-led, human-validated" delivery model.</li>
@@ -353,13 +360,13 @@
       <li><strong>Leadership</strong> — building and leading 5-person teams, onboarding and mentoring engineers, OKRs and Management 3.0.</li>
     </ul>
 
-    <h2>Open to</h2>
+    <h2 id="open-to">Open to</h2>
     <ul>
       <li>Technical conversations on AI-SDLC, agentic testing, and platform quality engineering</li>
       <li>OSS collaboration in the space</li>
     </ul>
 
-    <h2>Contact</h2>
+    <h2 id="contact">Contact</h2>
     <div class="contact">
       <a href="https://www.linkedin.com/in/miguelofbc" rel="me noopener">LinkedIn</a>
       <a href="https://github.com/miguelofbc" rel="me noopener">GitHub</a>
@@ -367,7 +374,7 @@
     </div>
 
     <footer>
-      Updated May 2026.
+      Updated June 2026.<span class="print-hint"> Printing this page (Cmd/Ctrl-P) gives a clean one-page CV.</span>
     </footer>
   </main>
 
@@ -377,6 +384,8 @@
     "@type": "Person",
     "name": "Miguel Oliveira",
     "url": "https://miguelofbc.github.io/",
+    "image": "https://miguelofbc.github.io/assets/og.png",
+    "email": "mailto:miguelofbc@gmail.com",
     "jobTitle": "Engineering Manager",
     "description": "Engineering Manager building AI-SDLC and agentic test automation in production SaaS.",
     "address": {
