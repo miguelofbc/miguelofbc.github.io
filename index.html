@@ -13,6 +13,7 @@
   <!-- Theme color for mobile browser chrome (light + dark) -->
   <meta name="theme-color" content="#fafafa" media="(prefers-color-scheme: light)">
   <meta name="theme-color" content="#111111" media="(prefers-color-scheme: dark)">
+  <meta name="color-scheme" content="light dark">
 
   <!-- Open Graph -->
   <meta property="og:type" content="profile">
@@ -94,6 +95,22 @@
     }
 
     ::selection { background: var(--selection); }
+
+    /* Skip link: invisible until keyboard focus */
+    .skip-link {
+      position: fixed;
+      top: -3rem;
+      left: var(--space-4);
+      z-index: 10;
+      background: var(--accent);
+      color: #fff;
+      padding: var(--space-2) var(--space-4);
+      border-radius: 4px;
+      font-family: var(--font-mono);
+      font-size: var(--step--1);
+      transition: top 0.2s ease;
+    }
+    .skip-link:focus-visible { top: var(--space-4); }
 
     main {
       max-width: var(--measure);
@@ -177,7 +194,19 @@
       html { scroll-behavior: auto; }
     }
 
-    /* 5. Contact row + footer */
+    /* 5. Jump nav + contact row + footer */
+    .jump {
+      display: flex;
+      flex-wrap: wrap;
+      gap: var(--space-2) var(--space-4);
+      margin: 0 0 var(--space-6);
+      font-family: var(--font-mono);
+      font-size: var(--step--1);
+      letter-spacing: 0.02em;
+    }
+    .jump a { color: var(--fg-faint); }
+    .jump a:hover, .jump a:focus-visible { color: var(--accent-strong); }
+
     .contact {
       display: flex;
       flex-wrap: wrap;
@@ -199,6 +228,8 @@
       font-family: var(--font-mono);
       letter-spacing: 0.01em;
     }
+    footer a { color: var(--fg-faint); }
+    footer a:hover, footer a:focus-visible { color: var(--accent-strong); }
 
     /* 6. Craft touch: the career timeline */
     .timeline {
@@ -215,6 +246,15 @@
       margin: 0;
     }
     .timeline li:last-child { border-bottom: 1px solid var(--border); }
+    .timeline li {
+      transition: background-color 0.15s ease;
+      margin-left: calc(-1 * var(--space-3));
+      margin-right: calc(-1 * var(--space-3));
+      padding-left: var(--space-3);
+      padding-right: var(--space-3);
+      border-radius: 4px;
+    }
+    .timeline li:hover { background: var(--bg-subtle); }
     .timeline .when {
       font-family: var(--font-mono);
       font-size: var(--step--1);
@@ -291,16 +331,34 @@
         word-break: break-all;
       }
       .timeline li, h2, footer { break-inside: avoid; }
+      .timeline li:hover { background: none; }
       footer { margin-top: 1.25rem; border-top: 1px solid #999; }
-      .print-hint { display: none; }
+      .print-hint, .skip-link, .no-print { display: none; }
       @page { margin: 1.6cm; }
+    }
+
+    /* 11. Higher-contrast preference */
+    @media (prefers-contrast: more) {
+      :root {
+        --fg-muted: var(--fg);
+        --fg-faint: var(--fg-muted);
+        --border: currentColor;
+      }
+      a { background-size: 100% 1px; }
     }
   </style>
 </head>
 <body>
-  <main>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <main id="main">
     <h1>Miguel Oliveira</h1>
     <p class="role">Engineering Manager · AI-SDLC &amp; agentic test automation</p>
+    <nav class="jump no-print" aria-label="Page sections">
+      <a href="#now">Now</a>
+      <a href="#career">Career</a>
+      <a href="#skills">Skills</a>
+      <a href="#contact">Contact</a>
+    </nav>
 
     <p>
       I lead quality and automation engineering at Lively, a B2B SaaS company, where
@@ -386,8 +444,18 @@
       <a href="mailto:miguelofbc@gmail.com">Email</a>
     </div>
 
+    <h2 id="colophon" class="no-print">Colophon</h2>
+    <p class="no-print">
+      This page is one self-contained HTML file: inline CSS, no webfonts, no
+      JavaScript framework, no analytics, no third-party requests beyond a
+      crawler-only Open Graph image. It respects dark mode and reduced
+      motion, targets WCAG AA contrast, and prints to a clean one-page CV.
+      Same bar I hold engineering teams to.
+      <a href="https://github.com/miguelofbc/miguelofbc.github.io">View the source</a>.
+    </p>
+
     <footer>
-      Updated June 2026.<span class="print-hint"> Printing this page (Cmd/Ctrl-P) gives a clean one-page CV.</span>
+      Updated July 2026.<span class="print-hint"> Printing this page (Cmd/Ctrl-P) gives a clean one-page CV.</span>
     </footer>
   </main>
 
@@ -401,6 +469,10 @@
     "email": "mailto:miguelofbc@gmail.com",
     "jobTitle": "Engineering Manager",
     "description": "Engineering Manager building AI-SDLC and agentic test automation in production SaaS.",
+    "worksFor": {
+      "@type": "Organization",
+      "name": "Lively"
+    },
     "address": {
       "@type": "PostalAddress",
       "addressLocality": "Aveiro",
