@@ -362,10 +362,10 @@
 
     <p>
       I drive the shift from manual QA to company-wide automation at Lively, a B2B
-      SaaS company. Together, the team took regression from a three-day manual cycle
-      staffed by seven engineers to about twenty minutes in CI, and moved the
-      organisation from a release every two weeks to two a week, with far fewer
-      hotfixes. My part, from the foundation of that transition, has been the
+      SaaS company. Together, the team took regression from about three manual days
+      per release to roughly fourteen minutes in CI, gating every pull request, and
+      moved the organisation from a release every two weeks to three a week.
+      My part, from the foundation of that transition, has been the
       direction: the strategy and what to build, growing manual testers into
       automation engineers, and the architecture of the end-to-end framework we
       built from the ground up. Most of our work now sits at the intersection of
@@ -381,8 +381,9 @@
 
     <h2 id="now">Currently shipping</h2>
     <ul>
-      <li>Replaced an unmaintained ~100-case WebdriverIO suite with an end-to-end Playwright and TypeScript framework the team built from scratch: independent tests, Allure reporting, and fully sharded parallel runs on Microsoft Playwright Service.</li>
-      <li>Every pull request now validates against a dockerized build in CI, with the full ~20-minute regression gating each release: the gate that lets the org release twice a week instead of every two weeks.</li>
+      <li>Replaced an unmaintained WebdriverIO suite with an end-to-end Playwright and TypeScript framework the team built from scratch: independent tests, Allure reporting, and fully sharded parallel runs on Microsoft Playwright Service. The regression suite has grown from 192 to 666 tests while its runtime fell from a 47-minute peak to about 14 minutes.</li>
+      <li>Every pull request now runs the full regression against a dockerized build in CI. That gate is what lets the org release three times a week instead of every two weeks.</li>
+      <li>Turned the automation team into consultants: skills and tooling that let developers write and fix their own end-to-end tests. Mobile developers now write the mobile tests themselves.</li>
       <li>Extended the platform sideways with dedicated frameworks for load and performance testing (k6) and for LLM validation (DeepEval with Python).</li>
       <li>Agentic test-autofix on the Anthropic SDK and MCP, and the "AI-led, human-validated" delivery model I introduced, now adopted across the engineering organisation.</li>
     </ul>
@@ -396,7 +397,7 @@
       <li>
         <span class="when">2023 –</span>
         <p class="what"><strong>Automation Engineering Manager · Lively</strong>
-          <span class="detail">Joined as Senior QA Engineer and moved into engineering management. Drive the company-wide move from manual QA to automation, setting the strategy and growing the team that built an end-to-end framework from scratch, taking regression from three manual days to about twenty minutes in CI and doubling release cadence. Established the "AI-led, human-validated" delivery model adopted across engineering.</span></p>
+          <span class="detail">Joined as Senior QA Engineer and moved into engineering management. Drive the company-wide move from manual QA to automation, setting the strategy and growing the team that built an end-to-end framework from scratch, taking regression from about three manual days to roughly fourteen minutes in CI and moving releases from every two weeks to three a week. Established the "AI-led, human-validated" delivery model adopted across engineering.</span></p>
       </li>
       <li>
         <span class="when">2022</span>
@@ -457,7 +458,7 @@
     </p>
 
     <footer>
-      Updated July 2026.<span class="print-hint"> Printing this page (Cmd/Ctrl-P) gives a clean one-page CV.</span>
+      Updated October 2026.<span class="print-hint"> Printing this page (Cmd/Ctrl-P) gives a clean one-page CV.</span>
     </footer>
   </main>
 
